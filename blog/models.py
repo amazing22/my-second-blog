@@ -3,6 +3,7 @@
 from django.db import models
 from django.utils import timezone
 
+
 # 모델을 정의하는 코드
 # 모델 = 객체(object)
 # class는 객체를 정의한다,
