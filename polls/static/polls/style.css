@@ -1,7 +1,20 @@
-li a {
-    color: green;
+h1{
+  font-weight: bold;
+  color: #FAFFF0
 }
-
+li{
+  list-style: none;
+}
+li a {
+    color: #F7E967;
+    text-decoration: none;
+}
+input {
+  margin:10px;
+}
 body {
-    background: white url("images/background.gif") no-repeat right bottom;
+    background: #04BFBF  url("images/background.gif") no-repeat right bottom;
+}
+a{
+  text-decoration: none;
 }
