@@ -1,6 +1,6 @@
 h1{
   font-weight: bold;
-  color: #FAFFF0
+  color: #ffffff;
 }
 li{
   list-style: none;
@@ -20,4 +20,5 @@ a{
 }
 a :hover{
   text-decoration: none;
+  color: white;
 }
