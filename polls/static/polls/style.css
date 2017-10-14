@@ -18,7 +18,7 @@ body {
 a{
   text-decoration: none;
 }
-a :hover{
+h1 a :hover{
   text-decoration: none;
   color: white;
 }
