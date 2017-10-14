@@ -15,11 +15,7 @@ input {
 body {
     background: #04BFBF  url("images/background.gif") no-repeat right bottom;
 }
-a{
-  text-decoration: none;
-  color: white;
-}
-a :active{
+h1 a{
   text-decoration: none;
   color: white;
 }
