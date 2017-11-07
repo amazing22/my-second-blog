@@ -32,6 +32,7 @@ ALLOWED_HOSTS = ['localhost', '127.0.0.1', '.pythonanywhere.com']
 
 INSTALLED_APPS = [
     'news',
+    'polls1.apps.Polls1Config',
     'polls.apps.PollsConfig',
     'blog',
     'django.contrib.admin',

@@ -1,7 +1,7 @@
-{% extends 'blog/base.html' %}
+{% extends 'blog/base.html' %} <!--  BLOG밑에있는 HTML파일을 확장하겠다. (나의 부모는 얘이다.) -->
 
 {% block content %}
-    {% for post in posts %}
+     {% for post in posts %}<!-- render명령에서 posts명령 받아옴 -->
         <div class="post">
             <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
             <p>{{ post.text|linebreaksbr }}</p>

@@ -9,11 +9,10 @@ from .forms import PostForm
 from django.shortcuts import redirect
 from django.contrib.auth.decorators import login_required # 추가
 
-
 @login_required #추가
 def post_list(request):
-    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-    return render(request, 'blog/post_list.html', {'posts': posts})
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date') # table.objects(행, 레코드) 행등중에서 fiter(where조건과 유사, like 부분과 같다.), _lte : less than or equals(timezon.now()보다 작거나 같으면 가져와라. orderby하는데 published_date로 정렬하라.)
+    return render(request, 'blog/post_list.html', {'posts': posts}) # 블로그에 있는 post_list에 전달해줘라. {'posts': posts} 요런 데이터를
 
 @login_required #추가
 def post_detail(request, pk):
