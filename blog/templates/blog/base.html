@@ -17,7 +17,7 @@
     <body>
       <div class="page-header">
         {% if user.is_authenticated %}
-          <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-check"></span></a>
+          <a href="{% url 'post_draft_list' %}" class="top-menu"><span class="glyphicon glyphicon-align-left"></span></a>
           <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
           <p class="top-menu">안녕하십니까? {{ user.username }} <small>(<a href="{% url 'logout' %}">Log out</a>)</small></p>
         {% else %}
